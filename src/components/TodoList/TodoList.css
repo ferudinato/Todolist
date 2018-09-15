@@ -26,6 +26,9 @@
 .TodoList ul li div {
     display: inline-block;
 }
+.TodoList ul li div:first-child::first-letter {
+    text-transform: capitalize;
+}
 .CloseBtn {
     float: right;
 }
