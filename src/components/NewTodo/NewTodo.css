@@ -1,0 +1,50 @@
+.NewTodo {
+    border: 1px solid seagreen;
+    background-color: lightseagreen;
+    height: 40px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 14px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: 2px 2px 2px #ccc;
+    position: fixed;
+    bottom: 0;
+}
+
+form {
+    display: flex;
+}
+
+form label span:first-child, form label {
+    margin-right: 10px;
+    font-size: 1.4em;
+}
+
+form input {
+    font: inherit;
+    font-size: 1.4em;
+    padding: 4px 8px;
+    box-sizing: border-box;
+    background-color: white;
+    border: 1px solid seagreen;
+}
+form input:hover {
+    background-color: lightgray;
+    border: 1px solid slategray;
+}
+
+form button {
+    font-size: 1.1em;
+    box-sizing: border-box;
+    background-color: lightsteelblue;
+    border: 1px solid steelblue;
+}
+
+form button:hover {
+    background-color: lightskyblue;
+}
+form button:active {
+    background-color: lightslategray;
+}

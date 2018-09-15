@@ -1,0 +1,45 @@
+.TodoList {
+    width: 65%;
+    margin: 10px auto;
+}
+
+.TodoList .NoTaskYet {
+    border: 1px solid red;
+    background-color: lightyellow;
+    padding: 8px 0px;
+    color: lightcoral;
+}
+
+.TodoList ul {
+    list-style-type: none;
+    margin: 0px 0px 90px 0px;
+    padding: 0px;
+}
+
+.TodoList ul li {
+    margin: 14px;
+    border: 1px solid seagreen;
+    background-color: rgb(185, 227, 225);
+    padding: 8px 0px;
+}
+
+.TodoList ul li div {
+    display: inline-block;
+}
+.CloseBtn {
+    float: right;
+}
+.CloseBtn button {
+    height: 100%;
+    box-sizing: border-box;
+    margin-right: 10px;
+    border: 1px solid yellowgreen;
+    background-color: lightgoldenrodyellow;
+}
+
+.CloseBtn button:hover {
+    background-color: rgb(227, 227, 192);
+}
+.CloseBtn button:active {
+    background-color: rgb(211, 211, 126);
+}
