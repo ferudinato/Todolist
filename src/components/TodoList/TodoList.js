@@ -1,13 +1,14 @@
 import React from 'react';
 
 import Stylesheet from './TodoList.css';
+import DeleteButton from '../../assets/images/deleteBtn.png';
 
 
 const todoList = (props) => {
     let tasks = props.taskList.map((item, i) => {
         return (<li key={item.id}>
             <div>{item.name}</div>
-            <div className={Stylesheet.CloseBtn}><button onClick={() => props.clicked(item.id)}>X</button></div>
+            <div className={Stylesheet.CloseBtn}><button onClick={() => props.clicked(item.id)}><img width='10' alt='Eliminar tarea' src={DeleteButton} /></button></div>
         </li>)
     })
 

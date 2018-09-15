@@ -36,10 +36,16 @@ form input:hover {
 }
 
 form button {
-    font-size: 1.1em;
+    font-size: 1.2em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
     box-sizing: border-box;
     background-color: lightsteelblue;
     border: 1px solid steelblue;
+}
+form button span {
+    margin-right: 4px;
 }
 
 form button:hover {
