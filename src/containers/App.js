@@ -4,11 +4,15 @@ import Stylesheet from './App.css';
 
 import TodoList from '../components/TodoList/TodoList';
 import NewTodo from '../components/NewTodo/NewTodo';
+import Overlay from '../components/UI/Overlay/Overlay';
+import Modal from '../components/UI/Modal/Modal';
 
 
 class App extends Component {
   state = {
-    tasks: []
+    tasks: [],
+    showOverlay: false,
+    modalMessage: ''
   }
 
   AddedTodoHandler = (e) => {
@@ -18,7 +22,10 @@ class App extends Component {
     const input = e.target.elements.taskName
     const taskName = input.value.trim()
     if (taskName === '') {
-      alert('No has proporcionado el nombre de la tarea que quieres guardar')
+      this.setState({
+        showOverlay: true,
+        modalMessage: 'No has proporcionado el nombre de la tarea que quieres guardar'
+      })
       return;
     }
 
@@ -45,11 +52,23 @@ class App extends Component {
 
   }
 
+  overlayClickedHandler = () => {
+    this.setState({
+      showOverlay: false,
+      modalMessage: ''
+    })
+  }
+
+  closedModalHandler = () => {
+    this.setState({showOverlay: false})
+  }
 
 
   render() {
     return (
       <div className={Stylesheet.App}>
+        <Modal open={this.state.showOverlay} closed={this.closedModalHandler}>{this.state.modalMessage}</Modal>
+        <Overlay show={this.state.showOverlay} clicked={this.overlayClickedHandler} />
         <TodoList taskList={this.state.tasks} clicked={this.RemovedTodoHandler} />
         <NewTodo submitted={this.AddedTodoHandler} />
       </div>
