@@ -1,0 +1,47 @@
+.Modal {
+    position: absolute;
+    border: 1px solid seagreen;
+    background-color: rgb(237, 250, 237);
+    z-index: 100;
+    width: 40%;
+    top: 12%;
+    left: 30%;
+    transition: all 0.2s ease-out;
+}
+.Modal p.Message {
+    margin: 20px 0px 0px 0px;
+    padding: 8px;
+}
+
+.Separator {
+    border: 0;
+    width: 90%;
+    color: rgb(172, 172, 172);
+    background-color: rgb(172, 172, 172);
+    height: 1px;
+    margin: 4px auto;
+}
+
+.Button {
+    font: inherit;
+    height: 100%;
+    width: 110px;
+    box-sizing: border-box;
+    margin: 8px;
+    padding: 8px;
+}
+
+.Button:hover {
+    background-color: rgb(215, 252, 158) !important;
+    border: 1px solid rgb(81, 164, 81) !important;
+}
+
+.Button:active {
+    background-color: rgb(181, 234, 103) !important;
+    border: 1px solid rgb(81, 164, 81) !important;
+}
+
+.green {
+    background-color: rgb(204, 234, 159) !important;
+    border: 1px solid rgb(81, 164, 81) !important;
+}
