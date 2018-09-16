@@ -22,26 +22,46 @@
     margin: 4px auto;
 }
 
+.Btns {
+    display: flex;
+    flex-direction: row;
+}
+
 .Button {
     font: inherit;
     height: 100%;
     width: 110px;
     box-sizing: border-box;
-    margin: 8px;
+    margin: 8px auto;
     padding: 8px;
-}
-
-.Button:hover {
-    background-color: rgb(215, 252, 158) !important;
-    border: 1px solid rgb(81, 164, 81) !important;
-}
-
-.Button:active {
-    background-color: rgb(181, 234, 103) !important;
-    border: 1px solid rgb(81, 164, 81) !important;
 }
 
 .green {
     background-color: rgb(204, 234, 159) !important;
     border: 1px solid rgb(81, 164, 81) !important;
+}
+
+.red {
+    background-color: rgb(249, 198, 198) !important;
+    border: 1px solid rgb(148, 69, 69) !important;
+}
+
+.green:hover {
+    background-color: rgb(215, 252, 158) !important;
+    border: 1px solid rgb(81, 164, 81) !important;
+}
+
+.red:hover {
+    background-color: rgb(247, 182, 182) !important;
+    border: 1px solid rgb(148, 69, 69) !important;
+}
+
+.green:active {
+    background-color: rgb(181, 234, 103) !important;
+    border: 1px solid rgb(81, 164, 81) !important;
+}
+
+.red:active {
+    background-color: rgb(245, 163, 156) !important;
+    border: 1px solid rgb(148, 69, 69) !important;
 }
